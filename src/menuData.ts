@@ -37,7 +37,7 @@ export const DIET_INFO: Record<DietKey, { fi: string; en: string }> = {
 export const CATEGORIES: Category[] = [
   {
     id: 'starters',
-    image: 'https://images.unsplash.com/photo-1504674905929-9e67e3b3f4f3?auto=format&fit=crop&w=1400&q=80',
+    image: 'images/starter.jpg',
     dishes: [
       {
         id: 'patatas-bravas',
@@ -48,7 +48,7 @@ export const CATEGORIES: Category[] = [
         diets: ['L'],
         optionalDiets: ['G', 'V'],
         wine: { name: 'Puerto Alicante Red, Spain', price: '7,80 € / 12 cl' },
-        image: 'https://images.unsplash.com/photo-1639024471283-035a8a8f9f5e?auto=format&fit=crop&w=900&q=80',
+        image: 'images/Patatas_Bravas.jpg',
       },
       {
         id: 'burrata-bruschetta',
@@ -59,7 +59,7 @@ export const CATEGORIES: Category[] = [
         diets: [],
         optionalDiets: ['G'],
         wine: { name: 'Domaine du Cleray Sauvignon Blanc, France', price: '8,40 € / 12 cl' },
-        image: 'https://images.unsplash.com/photo-1572695157396-e6059c4464a9?auto=format&fit=crop&w=900&q=80',
+        image: 'images/Burrata_Bruschetta.jpg',
       },
       {
         id: 'katkaraputoast',
@@ -70,7 +70,7 @@ export const CATEGORIES: Category[] = [
         diets: ['L'],
         optionalDiets: ['G'],
         wine: { name: 'Agarena Chardonnay, Spain', price: '7,80 € / 12 cl' },
-        image: 'https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=900&q=80',
+        image: 'images/Shrimp_Toast.jpg',
       },
       {
         id: 'harka-tartar',
@@ -81,7 +81,7 @@ export const CATEGORIES: Category[] = [
         descEn: 'Beef tenderloin tartare, pickled beetroot, red onion vinaigrette, fried capers, jalapeno mayonnaise and parmesan.',
         diets: ['L', 'G'],
         wine: { name: 'Wagram Pinot Noir, Austria', price: '10,80 € / 12 cl' },
-        image: 'https://images.unsplash.com/photo-1559561853-08451507cbe7?auto=format&fit=crop&w=900&q=80',
+        image: 'images/Beef-Tenderloin-Tartare.jpg',
       },
       {
         id: 'maalaiskanasalaatti',
@@ -91,13 +91,13 @@ export const CATEGORIES: Category[] = [
         descEn: 'Salad, marinated chicken breast, cherry tomatoes, pomegranate vinaigrette, roasted potatoes, croutons, aioli and parmesan.',
         diets: ['L', 'G'],
         wine: { name: 'Fine Riesling, Germany', price: '7,20 € / 12 cl' },
-        image: 'https://images.unsplash.com/photo-1546069901-ba9599a7eaa4?auto=format&fit=crop&w=900&q=80',
+        image: 'images/Country-Chicken-Salad.jpg',
       },
     ],
   },
   {
     id: 'simple',
-    image: 'https://images.unsplash.com/photo-1568901346378-23449d4e6e00?auto=format&fit=crop&w=1400&q=80',
+    image: 'images/Something-Simple.jpg',
     dishes: [
       {
         id: 'tarte-flambee',
@@ -108,7 +108,7 @@ export const CATEGORIES: Category[] = [
         diets: ['L'],
         optionalDiets: ['VL'],
         wine: { name: 'Pinot Gris Tradition, France', price: '10,80 € / 12 cl' },
-        image: 'https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=900&q=80',
+        image: 'images/Tarte-Flambée.jpg',
       },
       {
         id: 'villa-burger',
@@ -119,7 +119,7 @@ export const CATEGORIES: Category[] = [
         diets: ['L'],
         optionalDiets: ['G', 'V'],
         wine: { name: 'Wagram Pinot Noir, Austria', price: '10,80 € / 12 cl' },
-        image: 'https://images.unsplash.com/photo-1568901346378-23449d4e6e00?auto=format&fit=crop&w=900&q=80',
+        image: 'images/Burger.jpg',
       },
       {
         id: 'hot-wings',
@@ -130,7 +130,7 @@ export const CATEGORIES: Category[] = [
         diets: ['L'],
         optionalDiets: ['G', 'V'],
         drink: { name: 'Lahden Erikois IPA, Finland', price: '10 € / 0,5 l' },
-        image: 'https://images.unsplash.com/photo-1567620832903-9fc6debc209f?auto=format&fit=crop&w=900&q=80',
+        image: 'images/Hot-Wings.jpg',
       },
       {
         id: 'antipasto',
@@ -141,7 +141,7 @@ export const CATEGORIES: Category[] = [
         diets: ['L'],
         optionalDiets: ['G'],
         wine: { name: 'Michel Fonnen Pinot gris, France', price: '10,80 € / 12 cl' },
-        image: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80',
+        image: 'images/Antipasto.jpg',
       },
     ],
   },
@@ -158,7 +158,7 @@ export const CATEGORIES: Category[] = [
         diets: [],
         optionalDiets: ['G', 'V'],
         wine: { name: 'Chianti Classico, Italy', price: '10,80 € / 12 cl' },
-        image: 'https://images.unsplash.com/photo-1473093295043-cdd81227cb88?auto=format&fit=crop&w=900&q=80',
+        image: 'images/Pasta-alla-Norma.jpg',
       },
       {
         id: 'pasta-pollo',
@@ -169,7 +169,7 @@ export const CATEGORIES: Category[] = [
         diets: ['L'],
         optionalDiets: ['G'],
         wine: { name: 'Agarena Chardonnay, Spain', price: '7,80 € / 12 cl' },
-        image: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a7?auto=format&fit=crop&w=900&q=80',
+        image: 'images/Pasta-con-Pollo.jpg',
       },
       {
         id: 'pasta-manzo',
@@ -180,7 +180,7 @@ export const CATEGORIES: Category[] = [
         diets: ['L'],
         optionalDiets: ['G'],
         wine: { name: 'Valpolicella Ripasso, Italy', price: '10,80 € / 12 cl' },
-        image: 'https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=900&q=80',
+        image: 'images/Pasta-di-Manzo.jpg',
       },
       {
         id: 'bearnaisekanaa',
@@ -191,7 +191,7 @@ export const CATEGORIES: Category[] = [
         diets: [],
         optionalDiets: ['G'],
         wine: { name: 'Puerto Alicante white, Spain', price: '7,80 € / 12 cl' },
-        image: 'https://images.unsplash.com/photo-1598103442097-8b7c94b20c9d?auto=format&fit=crop&w=900&q=80',
+        image: 'images/Béarnaise-Chicken.jpg',
       },
       {
         id: 'siikaa',
@@ -202,7 +202,7 @@ export const CATEGORIES: Category[] = [
         diets: ['L'],
         optionalDiets: ['G'],
         wine: { name: "Toni's Grüner Veltliner, Austria", price: '10,80 € / 12 cl' },
-        image: 'https://images.unsplash.com/photo-1467003909585-2f8a79900219?auto=format&fit=crop&w=900&q=80',
+        image: 'images/Whitefish.jpg',
       },
       {
         id: 'lehtipihvi',
@@ -213,7 +213,7 @@ export const CATEGORIES: Category[] = [
         diets: ['L'],
         optionalDiets: ['G'],
         wine: { name: 'Valpolicella Ripasso, Italy', price: '10,80 € / 12 cl' },
-        image: 'https://images.unsplash.com/photo-1558030006-450675393702?auto=format&fit=crop&w=900&q=80',
+        image: 'images/Minute Steak.jpg',
       },
       {
         id: 'possu',
@@ -224,7 +224,7 @@ export const CATEGORIES: Category[] = [
         diets: ['L'],
         optionalDiets: ['G'],
         wine: { name: 'Paololeo Passitivo Primitivo, Italy', price: '8,40 € / 12 cl' },
-        image: 'https://images.unsplash.com/photo-1529563021893-cc83c1a3f0d9?auto=format&fit=crop&w=900&q=80',
+        image: 'images/Pork Chop.jpg',
       },
       {
         id: 'petite-tender',
@@ -235,7 +235,7 @@ export const CATEGORIES: Category[] = [
         diets: ['L'],
         optionalDiets: ['G'],
         wine: { name: 'Chateau Peyhaud, France', price: '10,80 € / 12 cl' },
-        image: 'https://images.unsplash.com/photo-1546964124-0cce460f38ef?auto=format&fit=crop&w=900&q=80',
+        image: 'images/Petite Tender.jpg',
       },
       {
         id: 'hevosta',
@@ -247,7 +247,7 @@ export const CATEGORIES: Category[] = [
         diets: ['L'],
         optionalDiets: ['G'],
         wine: { name: 'Valpolicella Ripasso, Italy', price: '10,80 € / 12 cl' },
-        image: 'https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=900&q=80',
+        image: 'images/Horse Black & White.jpg',
       },
       {
         id: 'pippuripihvi',
@@ -258,13 +258,13 @@ export const CATEGORIES: Category[] = [
         diets: ['L'],
         optionalDiets: ['G'],
         wine: { name: 'Chateau Peyhaud, France', price: '10,80 € / 12 cl' },
-        image: 'https://images.unsplash.com/photo-1600891964599-f1ba1c4e6e1e?auto=format&fit=crop&w=900&q=80',
+        image: 'images/Pepper Steak.jpg',
       },
     ],
   },
   {
     id: 'desserts',
-    image: 'https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=1400&q=80',
+    image: 'images/Desserts.jpg',
     dishes: [
       {
         id: 'pannacotta',
@@ -274,7 +274,7 @@ export const CATEGORIES: Category[] = [
         descEn: 'Dark chocolate pannacotta, finger salt, milk crumble and passiongel.',
         diets: ['L', 'G'],
         wine: { name: 'Recioto Farina Valpolicella Classico, Italy', price: '10 € / 8 cl' },
-        image: 'https://images.unsplash.com/photo-1532799235296-f975b4b4f704?auto=format&fit=crop&w=900&q=80',
+        image: 'images/Pannacotta.jpg',
       },
       {
         id: 'valkosuklaa',
@@ -284,7 +284,7 @@ export const CATEGORIES: Category[] = [
         descEn: 'Lemon-white chocolate parfait, rhubarb and almond cake.',
         diets: ['G'],
         wine: { name: 'Sobrero Moscato d\'Asti, Italy', price: '9 € / 8 cl' },
-        image: 'https://images.unsplash.com/photo-1488477181946-6428a0ac1770?auto=format&fit=crop&w=900&q=80',
+        image: 'images/White Chocolate & Rhubarb.jpg',
       },
       {
         id: 'sgroppino',
@@ -294,7 +294,7 @@ export const CATEGORIES: Category[] = [
         descFi: 'Sitruunasorbettia ja proseccoa.',
         descEn: 'Lemon sorbet and prosecco.',
         diets: ['L', 'G'],
-        image: 'https://images.unsplash.com/photo-1551538827-9cdfb94c8b9c?auto=format&fit=crop&w=900&q=80',
+        image: 'images/Sgroppino.jpg',
       },
       {
         id: 'jaateloa',
@@ -303,13 +303,13 @@ export const CATEGORIES: Category[] = [
         descFi: '2 palloa vaniljajäätelöä, valitsemasi kastike ja kermavaahtoa.',
         descEn: '2 scoops of vanilla ice cream, sauce of your choice and whipped cream.',
         diets: ['L', 'G'],
-        image: 'https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?auto=format&fit=crop&w=900&q=80',
+        image: 'images/Ice Cream Dessert.jpg',
       },
     ],
   },
   {
     id: 'drinks',
-    image: 'https://images.unsplash.com/photo-1510812431401-41d2e1a5d3f3?auto=format&fit=crop&w=1400&q=80',
+    image: 'images/Drinks & Wines.jpg',
     dishes: [],
   },
 ];
