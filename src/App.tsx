@@ -9,9 +9,10 @@ import LangToggle from './components/LangToggle';
 import { useActiveSection } from './hooks/useActiveSection';
 import { LanguageContext, TRANSLATIONS, useLang, type Language } from './i18n';
 import { UtensilsCrossed, ChevronDown, SearchX } from 'lucide-react';
+import myHeaderImage from './header.jpg';
 
 const HERO_IMAGE =
-  'https://images.unsplash.com/photo-1414235077428-338989332516?auto=format&fit=crop&w=1920&q=80';
+  myHeaderImage; 
 
 function dishMatchesSearch(dish: Dish, q: string): boolean {
   const query = q.toLowerCase().trim();
