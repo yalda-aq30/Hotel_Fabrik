@@ -1,3 +1,7 @@
+import starter from './starter.jpg';
+
+
+
 export type DietKey = 'L' | 'VL' | 'G' | 'V';
 
 export interface LocalizedText {
@@ -37,7 +41,7 @@ export const DIET_INFO: Record<DietKey, { fi: string; en: string }> = {
 export const CATEGORIES: Category[] = [
   {
     id: 'starters',
-    image: 'images/starter.jpg',
+    image: starter,
     dishes: [
       {
         id: 'patatas-bravas',
