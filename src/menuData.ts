@@ -1,4 +1,32 @@
 import starter from './starter.jpg';
+import Antipasto from './Antipasto.jpg';
+import BéarnaiseChicken from './Béarnaise-Chicken.jpg';
+import BeefTenderloinTartare from './Beef-Tenderloin-Tartare.jpg';
+import Burger from './Burger.jpg';
+import BurrataBruschetta from './Burrata_Bruschetta.jpg';
+import CountryChickenSalad from './Country-Chicken-Salad.jpg';
+import Desserts from './Desserts.jpg';
+import DrinksWines from './Drinks & Wines.jpg';
+import HorseBlackWhite from './Horse Black & White.jpg';
+import HotWings from './Hot-Wings.jpg';
+import IceCreamDessert from './Ice Cream Dessert.jpg';
+import MinuteSteak from './Minute Steak.jpg';
+import Pannacotta from './Pannacotta.jpg';
+import PastaAllaNorma from './Pasta-alla-Norma.jpg';
+import PastaConPollo from './Pasta-con-Pollo.jpg';
+import PastaDiManzo from './Pasta-di-Manzo.jpg';
+import PatatasBravas from './Patatas_Bravas.jpg';
+import PepperSteak from './Pepper Steak.jpg';
+import PetiteTender from './Petite Tender.jpg';
+import PorkChop from './Pork Chop.jpg';
+import Sgroppino from './Sgroppino.jpg';
+import ShrimpToast from './Shrimp_Toast.jpg';
+import SomethingSimple from './Something-Simple.jpg';
+import TarteFlambée from './Tarte-Flambée.jpg';
+import WhiteChocolateRhubarb from './White Chocolate & Rhubarb.jpg';
+import Whitefish from './Whitefish.jpg';
+
+
 
 
 
@@ -52,7 +80,7 @@ export const CATEGORIES: Category[] = [
         diets: ['L'],
         optionalDiets: ['G', 'V'],
         wine: { name: 'Puerto Alicante Red, Spain', price: '7,80 € / 12 cl' },
-        image: 'images/Patatas_Bravas.jpg',
+        image: PatatasBravas,
       },
       {
         id: 'burrata-bruschetta',
@@ -63,7 +91,7 @@ export const CATEGORIES: Category[] = [
         diets: [],
         optionalDiets: ['G'],
         wine: { name: 'Domaine du Cleray Sauvignon Blanc, France', price: '8,40 € / 12 cl' },
-        image: 'images/Burrata_Bruschetta.jpg',
+        image: BurrataBruschetta,
       },
       {
         id: 'katkaraputoast',
@@ -74,7 +102,7 @@ export const CATEGORIES: Category[] = [
         diets: ['L'],
         optionalDiets: ['G'],
         wine: { name: 'Agarena Chardonnay, Spain', price: '7,80 € / 12 cl' },
-        image: 'images/Shrimp_Toast.jpg',
+        image: ShrimpToast,
       },
       {
         id: 'harka-tartar',
@@ -85,7 +113,7 @@ export const CATEGORIES: Category[] = [
         descEn: 'Beef tenderloin tartare, pickled beetroot, red onion vinaigrette, fried capers, jalapeno mayonnaise and parmesan.',
         diets: ['L', 'G'],
         wine: { name: 'Wagram Pinot Noir, Austria', price: '10,80 € / 12 cl' },
-        image: 'images/Beef-Tenderloin-Tartare.jpg',
+        image: BeefTenderloinTartare,
       },
       {
         id: 'maalaiskanasalaatti',
@@ -95,13 +123,13 @@ export const CATEGORIES: Category[] = [
         descEn: 'Salad, marinated chicken breast, cherry tomatoes, pomegranate vinaigrette, roasted potatoes, croutons, aioli and parmesan.',
         diets: ['L', 'G'],
         wine: { name: 'Fine Riesling, Germany', price: '7,20 € / 12 cl' },
-        image: 'images/Country-Chicken-Salad.jpg',
+        image: CountryChickenSalad,
       },
     ],
   },
   {
     id: 'simple',
-    image: 'images/Something-Simple.jpg',
+    image: SomethingSimple,
     dishes: [
       {
         id: 'tarte-flambee',
@@ -112,7 +140,7 @@ export const CATEGORIES: Category[] = [
         diets: ['L'],
         optionalDiets: ['VL'],
         wine: { name: 'Pinot Gris Tradition, France', price: '10,80 € / 12 cl' },
-        image: 'images/Tarte-Flambée.jpg',
+        image: TarteFlambée,
       },
       {
         id: 'villa-burger',
@@ -123,7 +151,7 @@ export const CATEGORIES: Category[] = [
         diets: ['L'],
         optionalDiets: ['G', 'V'],
         wine: { name: 'Wagram Pinot Noir, Austria', price: '10,80 € / 12 cl' },
-        image: 'images/Burger.jpg',
+        image: Burger, 
       },
       {
         id: 'hot-wings',
@@ -134,7 +162,7 @@ export const CATEGORIES: Category[] = [
         diets: ['L'],
         optionalDiets: ['G', 'V'],
         drink: { name: 'Lahden Erikois IPA, Finland', price: '10 € / 0,5 l' },
-        image: '/images/Hot-Wings.jpg',
+        image: HotWings,
       },
       {
         id: 'antipasto',
@@ -145,7 +173,7 @@ export const CATEGORIES: Category[] = [
         diets: ['L'],
         optionalDiets: ['G'],
         wine: { name: 'Michel Fonnen Pinot gris, France', price: '10,80 € / 12 cl' },
-        image: '/images/Antipasto.jpg',
+        image: Antipasto,
       },
     ],
   },
@@ -162,7 +190,7 @@ export const CATEGORIES: Category[] = [
         diets: [],
         optionalDiets: ['G', 'V'],
         wine: { name: 'Chianti Classico, Italy', price: '10,80 € / 12 cl' },
-        image: '/images/Pasta-alla-Norma.jpg',
+        image: PastaAllaNorma,
       },
       {
         id: 'pasta-pollo',
@@ -173,7 +201,7 @@ export const CATEGORIES: Category[] = [
         diets: ['L'],
         optionalDiets: ['G'],
         wine: { name: 'Agarena Chardonnay, Spain', price: '7,80 € / 12 cl' },
-        image: '/images/Pasta-con-Pollo.jpg',
+        image: PastaConPollo,
       },
       {
         id: 'pasta-manzo',
@@ -184,7 +212,7 @@ export const CATEGORIES: Category[] = [
         diets: ['L'],
         optionalDiets: ['G'],
         wine: { name: 'Valpolicella Ripasso, Italy', price: '10,80 € / 12 cl' },
-        image: '/images/Pasta-di-Manzo.jpg',
+        image: PastaDiManzo,
       },
       {
         id: 'bearnaisekanaa',
@@ -195,7 +223,7 @@ export const CATEGORIES: Category[] = [
         diets: [],
         optionalDiets: ['G'],
         wine: { name: 'Puerto Alicante white, Spain', price: '7,80 € / 12 cl' },
-        image: '/images/Béarnaise-Chicken.jpg',
+        image: BéarnaiseChicken,
       },
       {
         id: 'siikaa',
@@ -206,7 +234,7 @@ export const CATEGORIES: Category[] = [
         diets: ['L'],
         optionalDiets: ['G'],
         wine: { name: "Toni's Grüner Veltliner, Austria", price: '10,80 € / 12 cl' },
-        image: '/images/Whitefish.jpg',
+        image: Whitefish,
       },
       {
         id: 'lehtipihvi',
@@ -217,7 +245,7 @@ export const CATEGORIES: Category[] = [
         diets: ['L'],
         optionalDiets: ['G'],
         wine: { name: 'Valpolicella Ripasso, Italy', price: '10,80 € / 12 cl' },
-        image: '/images/Minute Steak.jpg',
+        image: MinuteSteak,
       },
       {
         id: 'possu',
@@ -228,7 +256,7 @@ export const CATEGORIES: Category[] = [
         diets: ['L'],
         optionalDiets: ['G'],
         wine: { name: 'Paololeo Passitivo Primitivo, Italy', price: '8,40 € / 12 cl' },
-        image: '/images/Pork Chop.jpg',
+        image: PorkChop,
       },
       {
         id: 'petite-tender',
@@ -239,7 +267,7 @@ export const CATEGORIES: Category[] = [
         diets: ['L'],
         optionalDiets: ['G'],
         wine: { name: 'Chateau Peyhaud, France', price: '10,80 € / 12 cl' },
-        image: '/images/Petite Tender.jpg',
+        image: PetiteTender,
       },
       {
         id: 'hevosta',
@@ -251,7 +279,7 @@ export const CATEGORIES: Category[] = [
         diets: ['L'],
         optionalDiets: ['G'],
         wine: { name: 'Valpolicella Ripasso, Italy', price: '10,80 € / 12 cl' },
-        image: '/images/Horse Black & White.jpg',
+        image: HorseBlackWhite,
       },
       {
         id: 'pippuripihvi',
@@ -262,13 +290,13 @@ export const CATEGORIES: Category[] = [
         diets: ['L'],
         optionalDiets: ['G'],
         wine: { name: 'Chateau Peyhaud, France', price: '10,80 € / 12 cl' },
-        image: '/images/Pepper Steak.jpg',
+        image: PepperSteak,
       },
     ],
   },
   {
     id: 'desserts',
-    image: '/images/Desserts.jpg',
+    image: Desserts,
     dishes: [
       {
         id: 'pannacotta',
@@ -278,7 +306,7 @@ export const CATEGORIES: Category[] = [
         descEn: 'Dark chocolate pannacotta, finger salt, milk crumble and passiongel.',
         diets: ['L', 'G'],
         wine: { name: 'Recioto Farina Valpolicella Classico, Italy', price: '10 € / 8 cl' },
-        image: '/images/Pannacotta.jpg',
+        image: Pannacotta,
       },
       {
         id: 'valkosuklaa',
@@ -288,7 +316,7 @@ export const CATEGORIES: Category[] = [
         descEn: 'Lemon-white chocolate parfait, rhubarb and almond cake.',
         diets: ['G'],
         wine: { name: 'Sobrero Moscato d\'Asti, Italy', price: '9 € / 8 cl' },
-        image: '/images/White Chocolate & Rhubarb.jpg',
+        image: WhiteChocolateRhubarb,
       },
       {
         id: 'sgroppino',
@@ -298,7 +326,7 @@ export const CATEGORIES: Category[] = [
         descFi: 'Sitruunasorbettia ja proseccoa.',
         descEn: 'Lemon sorbet and prosecco.',
         diets: ['L', 'G'],
-        image: '/images/Sgroppino.jpg',
+        image: Sgroppino,
       },
       {
         id: 'jaateloa',
@@ -307,13 +335,13 @@ export const CATEGORIES: Category[] = [
         descFi: '2 palloa vaniljajäätelöä, valitsemasi kastike ja kermavaahtoa.',
         descEn: '2 scoops of vanilla ice cream, sauce of your choice and whipped cream.',
         diets: ['L', 'G'],
-        image: '/images/Ice Cream Dessert.jpg',
+        image: IceCreamDessert,
       },
     ],
   },
   {
     id: 'drinks',
-    image: '/images/Drinks & Wines.jpg',
+    image: DrinksWines,
     dishes: [],
   },
 ];
