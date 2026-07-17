@@ -130,7 +130,7 @@ export const CATEGORIES: Category[] = [
         diets: ['L'],
         optionalDiets: ['G', 'V'],
         drink: { name: 'Lahden Erikois IPA, Finland', price: '10 € / 0,5 l' },
-        image: 'images/Hot-Wings.jpg',
+        image: '/images/Hot-Wings.jpg',
       },
       {
         id: 'antipasto',
@@ -141,7 +141,7 @@ export const CATEGORIES: Category[] = [
         diets: ['L'],
         optionalDiets: ['G'],
         wine: { name: 'Michel Fonnen Pinot gris, France', price: '10,80 € / 12 cl' },
-        image: 'images/Antipasto.jpg',
+        image: '/images/Antipasto.jpg',
       },
     ],
   },
@@ -158,7 +158,7 @@ export const CATEGORIES: Category[] = [
         diets: [],
         optionalDiets: ['G', 'V'],
         wine: { name: 'Chianti Classico, Italy', price: '10,80 € / 12 cl' },
-        image: 'images/Pasta-alla-Norma.jpg',
+        image: '/images/Pasta-alla-Norma.jpg',
       },
       {
         id: 'pasta-pollo',
@@ -169,7 +169,7 @@ export const CATEGORIES: Category[] = [
         diets: ['L'],
         optionalDiets: ['G'],
         wine: { name: 'Agarena Chardonnay, Spain', price: '7,80 € / 12 cl' },
-        image: 'images/Pasta-con-Pollo.jpg',
+        image: '/images/Pasta-con-Pollo.jpg',
       },
       {
         id: 'pasta-manzo',
@@ -180,7 +180,7 @@ export const CATEGORIES: Category[] = [
         diets: ['L'],
         optionalDiets: ['G'],
         wine: { name: 'Valpolicella Ripasso, Italy', price: '10,80 € / 12 cl' },
-        image: 'images/Pasta-di-Manzo.jpg',
+        image: '/images/Pasta-di-Manzo.jpg',
       },
       {
         id: 'bearnaisekanaa',
@@ -191,7 +191,7 @@ export const CATEGORIES: Category[] = [
         diets: [],
         optionalDiets: ['G'],
         wine: { name: 'Puerto Alicante white, Spain', price: '7,80 € / 12 cl' },
-        image: 'images/Béarnaise-Chicken.jpg',
+        image: '/images/Béarnaise-Chicken.jpg',
       },
       {
         id: 'siikaa',
@@ -202,7 +202,7 @@ export const CATEGORIES: Category[] = [
         diets: ['L'],
         optionalDiets: ['G'],
         wine: { name: "Toni's Grüner Veltliner, Austria", price: '10,80 € / 12 cl' },
-        image: 'images/Whitefish.jpg',
+        image: '/images/Whitefish.jpg',
       },
       {
         id: 'lehtipihvi',
@@ -213,7 +213,7 @@ export const CATEGORIES: Category[] = [
         diets: ['L'],
         optionalDiets: ['G'],
         wine: { name: 'Valpolicella Ripasso, Italy', price: '10,80 € / 12 cl' },
-        image: 'images/Minute Steak.jpg',
+        image: '/images/Minute Steak.jpg',
       },
       {
         id: 'possu',
@@ -224,7 +224,7 @@ export const CATEGORIES: Category[] = [
         diets: ['L'],
         optionalDiets: ['G'],
         wine: { name: 'Paololeo Passitivo Primitivo, Italy', price: '8,40 € / 12 cl' },
-        image: 'images/Pork Chop.jpg',
+        image: '/images/Pork Chop.jpg',
       },
       {
         id: 'petite-tender',
@@ -235,7 +235,7 @@ export const CATEGORIES: Category[] = [
         diets: ['L'],
         optionalDiets: ['G'],
         wine: { name: 'Chateau Peyhaud, France', price: '10,80 € / 12 cl' },
-        image: 'images/Petite Tender.jpg',
+        image: '/images/Petite Tender.jpg',
       },
       {
         id: 'hevosta',
@@ -247,7 +247,7 @@ export const CATEGORIES: Category[] = [
         diets: ['L'],
         optionalDiets: ['G'],
         wine: { name: 'Valpolicella Ripasso, Italy', price: '10,80 € / 12 cl' },
-        image: 'images/Horse Black & White.jpg',
+        image: '/images/Horse Black & White.jpg',
       },
       {
         id: 'pippuripihvi',
@@ -258,13 +258,13 @@ export const CATEGORIES: Category[] = [
         diets: ['L'],
         optionalDiets: ['G'],
         wine: { name: 'Chateau Peyhaud, France', price: '10,80 € / 12 cl' },
-        image: 'images/Pepper Steak.jpg',
+        image: '/images/Pepper Steak.jpg',
       },
     ],
   },
   {
     id: 'desserts',
-    image: 'images/Desserts.jpg',
+    image: '/images/Desserts.jpg',
     dishes: [
       {
         id: 'pannacotta',
@@ -274,7 +274,7 @@ export const CATEGORIES: Category[] = [
         descEn: 'Dark chocolate pannacotta, finger salt, milk crumble and passiongel.',
         diets: ['L', 'G'],
         wine: { name: 'Recioto Farina Valpolicella Classico, Italy', price: '10 € / 8 cl' },
-        image: 'images/Pannacotta.jpg',
+        image: '/images/Pannacotta.jpg',
       },
       {
         id: 'valkosuklaa',
@@ -284,7 +284,7 @@ export const CATEGORIES: Category[] = [
         descEn: 'Lemon-white chocolate parfait, rhubarb and almond cake.',
         diets: ['G'],
         wine: { name: 'Sobrero Moscato d\'Asti, Italy', price: '9 € / 8 cl' },
-        image: 'images/White Chocolate & Rhubarb.jpg',
+        image: '/images/White Chocolate & Rhubarb.jpg',
       },
       {
         id: 'sgroppino',
@@ -294,7 +294,7 @@ export const CATEGORIES: Category[] = [
         descFi: 'Sitruunasorbettia ja proseccoa.',
         descEn: 'Lemon sorbet and prosecco.',
         diets: ['L', 'G'],
-        image: 'images/Sgroppino.jpg',
+        image: '/images/Sgroppino.jpg',
       },
       {
         id: 'jaateloa',
@@ -303,13 +303,13 @@ export const CATEGORIES: Category[] = [
         descFi: '2 palloa vaniljajäätelöä, valitsemasi kastike ja kermavaahtoa.',
         descEn: '2 scoops of vanilla ice cream, sauce of your choice and whipped cream.',
         diets: ['L', 'G'],
-        image: 'images/Ice Cream Dessert.jpg',
+        image: '/images/Ice Cream Dessert.jpg',
       },
     ],
   },
   {
     id: 'drinks',
-    image: 'images/Drinks & Wines.jpg',
+    image: '/images/Drinks & Wines.jpg',
     dishes: [],
   },
 ];
