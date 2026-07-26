@@ -153,11 +153,21 @@ function AppInner() {
                   </div>
                 </div>
               ) : cat.dishes.length === 0 ? null : (
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-                  {cat.dishes.map((dish, i) => (
-                    <DishCard key={dish.id} dish={dish} index={i} />
-                  ))}
-                </div>
+                <>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+                    {cat.dishes.map((dish, i) => (
+                      <DishCard key={dish.id} dish={dish} index={i} />
+                    ))}
+                  </div>
+
+                  {cat.id === 'mains' && (
+                    <div className="my-6 rounded-xl bg-amber-50/70 border border-amber-200/60 px-4 py-3 text-center">
+                      <p className="text-xs sm:text-sm font-medium text-amber-800">
+                        ✨ {t.dish.bataattiNote}
+                      </p>
+                    </div>
+                  )}
+                </>
               )}
             </section>
           ))

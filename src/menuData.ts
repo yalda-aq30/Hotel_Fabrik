@@ -51,6 +51,15 @@ export interface Dish {
   image?: string;
   limited?: boolean;
   k18?: boolean;
+  options?: {
+    titleFi: string;
+    titleEn: string;
+    choices: {
+      nameFi: string;
+      nameEn: string;
+      diet: DietKey;
+    }[];
+  };
 }
 
 export interface Category {
@@ -132,15 +141,30 @@ export const CATEGORIES: Category[] = [
     image: SomethingSimple,
     dishes: [
       {
-        id: 'tarte-flambee',
+        id: 'tarte-flambée',
         name: { fi: 'Tarte flambée', en: 'Tarte Flambée' },
         price: '12',
-        descFi: 'Etelä-Ranskan bistrojen helmi. Uunissa rapeaksi paistetun pohjan päällä ranskankermaa, juustoa ja rucolaa. Valintasi mukaan pekoni-sipuli-valkosipuliöljy tai tomaatti-mozzarella-valkosipuliöljy.',
-        descEn: "Crispy oven-baked base with crème fraiche, cheese and rocket salad. Choose between bacon-onion-garlic oil or tomato-mozzarella filling.",
+        descFi: 'Etelä-Ranskan bistrojen helmi. Uunissa rapeaksi paistetun pohjan päällä ranskankermaa, juustoa ja rucolaa.',
+        descEn: 'Crispy oven-baked base with crème fraiche, cheese and rocket salad.',
         diets: ['L'],
-        optionalDiets: ['VL'],
         wine: { name: 'Pinot Gris Tradition, France', price: '10,80 € / 12 cl' },
         image: TarteFlambée,
+        options: {
+          titleFi: 'Valitse pohja / täyte:',
+          titleEn: 'Choose your base / filling:',
+          choices: [
+            {
+              nameFi: 'Pekoni-sipuli-valkosipuliöljy',
+              nameEn: 'Bacon, onion, garlic oil',
+              diet: 'L',
+            },
+            {
+              nameFi: 'Tomaatti-mozzarella-valkosipuliöljy',
+              nameEn: 'Tomato, mozzarella, garlic oil',
+              diet: 'VL',
+            },
+          ],
+        },
       },
       {
         id: 'villa-burger',
@@ -168,11 +192,11 @@ export const CATEGORIES: Category[] = [
         id: 'antipasto',
         name: { fi: 'Antipasto', en: 'Antipasto' },
         price: '21',
-        descFi: "Valikoima juustoja ja leikkeleitä, Villan marinoituja oliiveja, artisokkaa, tomaattichutney ja juustoflambeeta.",
+        descFi: 'Valikoima juustoja ja leikkeleitä, Villan marinoituja oliiveja, artisokkaa, tomaattichutneyta ja juustoflambeeta.',
         descEn: 'A selection of cheeses and cold cuts, marinated olives, artichoke, tomato chutney and cheese flambee.',
         diets: ['L'],
         optionalDiets: ['G'],
-        wine: { name: 'Michel Fonnen Pinot gris, France', price: '10,80 € / 12 cl' },
+        wine: { name: 'Michel Fonnen Pinot Gris, France', price: '10,80 € / 12 cl' },
         image: Antipasto,
       },
     ],
@@ -420,13 +444,25 @@ export const WINE_LIST: { section: string; sectionFi: string; wines: WineItem[] 
     ],
   },
   {
-    section: 'Dessert Wines',
-    sectionFi: 'Jälkiruokaviinit',
-    wines: [
-      { name: 'Recioto Farina Valpolicella Classico, Italy', origin: 'Italy', glass: '10 €', bottle: '—', descFi: 'Makea, samettinen / 8 cl' },
-      { name: "Sobrero Moscato d'Asti, Italy", origin: 'Italy', glass: '9 €', bottle: '—', descFi: 'Hedelmäinen, kevyt / 8 cl' },
-    ],
-  },
+        section: 'Dessert Wines',
+        sectionFi: 'Jälkiruokaviinit',
+        wines: [
+          {
+            name: 'Passito della Fontane, Italy',
+            origin: 'Italy',
+            glass: '10,50 € / 8 cl',
+            bottle: '-',
+            descFi: 'Garganega. Täyteläinen ja runsas.',
+          },
+          {
+            name: 'Farina Recioto, Veneto, Italy',
+            origin: 'Italy',
+            glass: '10,00 € / 8 cl',
+            bottle: '-',
+            descFi: 'Corvina, Rondinella, Molinara. Makea, täyteläinen ja samettisen pehmeä.',
+          },
+        ],
+      },
   {
     section: 'Non-Alcoholic',
     sectionFi: 'Alkoholittomat',

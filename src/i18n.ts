@@ -22,6 +22,7 @@ export interface Translations {
     dietaryInfo: string;
     limited: string;
     addOnFries: string;
+    bataattiNote: string;
   };
   categories: Record<string, string>;
   drinks: {
@@ -72,6 +73,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
       dietaryInfo: 'Ruokavaliotiedot',
       limited: 'Rajallinen',
       addOnFries: 'Lisää ranskalaiset: +5,00 €',
+      bataattiNote: 'Vaihda annokseen bataattiranskalaiset +1,50 €',
     },
     categories: {
       starters: 'Alkuun',
@@ -126,6 +128,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
       dietaryInfo: 'Dietary Information',
       limited: 'Limited',
       addOnFries: 'Add fries: +5,00 €',
+      bataattiNote: 'Change to sweet potato fries +1,50 €',
     },
     categories: {
       starters: 'Starters',

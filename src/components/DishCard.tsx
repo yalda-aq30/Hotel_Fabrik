@@ -1,4 +1,4 @@
-import { Wine, Beer, Plus, Sparkles, Leaf } from 'lucide-react';
+import { Wine, Beer, Plus, Sparkles, Leaf, CheckCircle2 } from 'lucide-react';
 import type { Dish } from '../menuData';
 import { DIET_INFO } from '../menuData';
 import { useLang } from '../i18n';
@@ -74,6 +74,28 @@ export default function DishCard({ dish, index }: Props) {
         </div>
 
         <p className="mt-2 text-sm text-slate-600 leading-relaxed">{dishDesc}</p>
+
+        {/* نمایش گزینه‌های انتخابی (مثل Tarte flambée) */}
+        {dish.options && (
+          <div className="mt-3.5 rounded-xl bg-slate-50 border border-slate-200/80 p-3">
+            <p className="text-xs font-semibold text-steel-700 mb-2">
+              {lang === 'fi' ? dish.options.titleFi : dish.options.titleEn}
+            </p>
+            <div className="space-y-1.5">
+              {dish.options.choices.map((choice, idx) => (
+                <div key={idx} className="flex items-center justify-between text-xs text-slate-600 bg-white px-2.5 py-1.5 rounded-lg border border-slate-100">
+                  <span className="font-medium text-slate-700 flex items-center gap-1.5">
+                    <CheckCircle2 className="h-3.5 w-3.5 text-steel-500 flex-shrink-0" />
+                    {lang === 'fi' ? choice.nameFi : choice.nameEn}
+                  </span>
+                  <span className="text-[10px] font-semibold text-steel-600 bg-steel-50 px-1.5 py-0.5 rounded border border-steel-100">
+                    {choice.diet}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
 
         {dish.addOn && (
           <p className="mt-2 inline-flex items-center gap-1 text-xs text-steel-600 font-medium">
