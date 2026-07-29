@@ -63,7 +63,7 @@ function AppInner() {
       <header className="relative h-[60vh] min-h-[460px] w-full overflow-hidden">
         <img
           src={HERO_IMAGE}
-          alt="Villa Restaurant"
+          alt="Yalda Restaurant"
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-steel-900/50 via-steel-800/40 to-steel-900/70" />
@@ -79,7 +79,7 @@ function AppInner() {
               </span>
             </div>
             <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-semibold tracking-wide drop-shadow-lg">
-              VILLA
+              Yalda
             </h1>
             <p className="mt-2 text-[11px] sm:text-sm md:text-base uppercase tracking-[0.25em] sm:tracking-[0.35em] text-skyblue font-medium">
               {t.hero.subtitle}
